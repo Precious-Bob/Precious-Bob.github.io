@@ -52,19 +52,9 @@ container.addEventListener('click', (e) => {
 });
 
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'ArrowRight') {
-    forwardKeyPress();
-  }
+  if (e.key === 'ArrowRight') forwardKeyPress();
+  if (e.key === 'ArrowUp') forwardKeyPress();
 
-  if (e.key === 'ArrowLeft') {
-    backwardKeyPress();
-  }
-
-  if (e.key === 'ArrowUp') {
-    forwardKeyPress();
-  }
-
-  if (e.key === 'ArrowDown') {
-    backwardKeyPress();
-  }
+  if (e.key === 'ArrowLeft') backwardKeyPress();
+  if (e.key === 'ArrowDown') backwardKeyPress();
 });
